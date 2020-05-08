@@ -85,7 +85,7 @@ body {
   transition: all .2s; }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+    text-shadow: 0.5rem 1rem 2rem rgba(51, 51, 51, 0.2); }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -143,7 +143,7 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 2rem rgba(51, 51, 51, 0.2); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
@@ -151,7 +151,7 @@ body {
 .btn:active, .btn:focus {
   outline: none;
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.2); }
 
 .btn--white {
   background-color: #fff;
@@ -194,7 +194,7 @@ body {
 .btn-text:hover {
   background-color: #55c57a;
   color: #fff;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(51, 51, 51, 0.15);
   transform: translateY(-2px); }
 
 .card {
@@ -212,7 +212,7 @@ body {
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 1.5rem 4rem rgba(51, 51, 51, 0.15); }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
@@ -291,7 +291,7 @@ body {
   position: relative; }
   .composition__photo {
     width: 55%;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1.5rem 4rem rgba(51, 51, 51, 0.4);
     border-radius: 2px;
     position: absolute;
     z-index: 10;
@@ -309,7 +309,7 @@ body {
     .composition__photo:hover {
       outline: 1.5rem solid #55c57a;
       transform: scale(1.05);
-      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      box-shadow: 0 2.5rem 4rem rgba(51, 51, 51, 0.5);
       z-index: 20; }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
@@ -320,7 +320,7 @@ body {
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(51, 51, 51, 0.15);
   transition: transform .2s; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
@@ -352,7 +352,7 @@ body {
     color: #999; }
   .form__input:focus {
     outline: none;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1rem 2rem rgba(51, 51, 51, 0.1);
     border-bottom: 2px solid #55c57a; }
   .form__input:focus:invalid {
     border-bottom: 2px solid #ff7730; }
@@ -411,7 +411,7 @@ body {
 .story {
   width: 75%;
   margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3rem 6rem rgba(51, 51, 51, 0.1);
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   padding: 6rem;
@@ -451,6 +451,45 @@ body {
     opacity: 1; }
   .story:hover .story__img {
     transform: translate(-4rem) scale(1); }
+
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem; }
+  .footer__logo-box {
+    text-align: center; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__navigation {
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    display: inline-block; }
+  .footer__list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 3.5rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #f7f7f7;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block; }
+  .footer__link--author {
+    color: #ff7730;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block; }
+  .footer__link:hover, .footer__link:active {
+    color: #55c57a; }
+  .footer__copyright {
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    display: inline-block;
+    width: 80%; }
 
 .row {
   max-width: 114rem;
@@ -531,7 +570,7 @@ body {
   background-size: 100%;
   height: 50rem;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 1.5rem 4rem rgba(51, 51, 51, 0.15); }
   .book__form {
     width: 50%;
     padding: 6rem; }
