@@ -1,6 +1,7 @@
 .navigation {
   &__checkbox {
     display: none;
+    visibility:hidden;
   }
 
   &__button {
@@ -15,6 +16,16 @@
     box-shadow: 1rem 1rem 3rem rgba($color-black, 0.1);
     text-align: center;
     cursor: pointer;
+
+    @include respond(tab-port){
+      top: 4rem;
+      right: 4rem;
+    }
+
+    @include respond(phone){
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__background {
@@ -30,6 +41,16 @@
     );
     z-index: 1000;
     transition: transform 0.8s;
+
+    @include respond(tab-port){
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+
+    @include respond(phone){
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
 
   &__nav {
@@ -41,12 +62,19 @@
     opacity: 0;
     width: 0;
     transition: all 0.8s;
+
+
+    @include respond(phone){
+      visibility: hidden;
+      transition: all 0.3s;
+    }
   }
 
   &__list {
     @include absoluteCenterAlign;
     list-style: none;
     text-align: center;
+    
   }
 
   &__item {
@@ -88,6 +116,11 @@
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
+
+    @include respond(phone){
+      visibility: visible;
+    }
+    
   }
 
   &__icon {
