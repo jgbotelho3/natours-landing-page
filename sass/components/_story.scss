@@ -21,13 +21,20 @@
     width: 12rem;
     height: 12rem;
     float: left;
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
     transform: translateY(-1rem);
     transform: skewX(12deg);
     position:relative;
+    overflow: hidden;
+    border-radius: 50%;
+
+    @supports (-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0)){
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      border-radius: none;
+    }
+
 
     @include respond(phone){
       transform: skewX(0);
