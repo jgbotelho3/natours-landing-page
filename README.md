@@ -3,6 +3,10 @@
 Responsive template developed using SASS and HTML
 
 
+![Header](https://github.com/jgbotelho3/natours-landing-page/blob/master/img/header.png)
+
+![Tours-section](https://github.com/jgbotelho3/natours-landing-page/blob/master/img/tours.png)
+
 ## Installation
 
 Clone this repository or copy a zip file.
